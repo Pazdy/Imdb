@@ -14,8 +14,8 @@
                             <div class="row">
                                 <div class="col-md-4 col-md-offset-4">
                                     <div class="form-group">
-                                        <asp:Label Text="Put your email" runat="server" />
-                                        <asp:TextBox ID="useremail" runat="server" Enabled="true" CssClass="form-control input-group-sm" placeholder="User name" />
+                                        <asp:Label Text="" runat="server" />
+                                        <asp:TextBox ID="userName" runat="server" Enabled="true" CssClass="form-control input-group-sm" placeholder="User name" />
                                     </div>
                                 </div>
                             </div>
@@ -23,14 +23,21 @@
                                 <div class="col-md-5 col-md-offset-4">
                                     <div class="form-group">
                                         <asp:Label Text="" runat="server" />
-                                        <asp:TextBox ID="ppwid" runat="server" Enabled="true" CssClass="form-control input-group-sm" placeholder="Password" />
+                                        <asp:TextBox ID="pw" runat="server" Enabled="true" CssClass="form-control input-group-sm" placeholder="Password" />
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-10 col-md-offset-5">
+                                <div class="col-md-6 col-md-offset-5">
                                     <div class="form-group">
                                         <asp:Button id="loginbtn" Text="Log In!" runat="server" OnClick="Loginbtn_Click"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-5">
+                                    <div class="form-group">
+                                        <asp:Label id="information" Text="" runat="server"/>
                                     </div>
                                 </div>
                             </div>

@@ -55,7 +55,7 @@ namespace Imdb
             com.ExecuteNonQuery();
             con.Close();
         }
-        protected void find_record(string columnName, string inputValue)
+        public void find_record(string columnName, string inputValue)
         {
             string ins = String.Format("SELECT * FROM [UserTable] WHERE {0}='{1}'", columnName, inputValue);
             SqlCommand com = new SqlCommand(ins, con);
@@ -84,7 +84,7 @@ namespace Imdb
             }
 
         }
-        protected void error_mess(string input)
+        public void error_mess(string input)
         {
             information.Text = String.Format("{0} is already in use!", input);
         }
